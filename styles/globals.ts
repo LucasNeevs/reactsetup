@@ -2,14 +2,14 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
-    amrgin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
   body {
-    background: #121214;
-    color: #e1e1e6;
+    background: ${(props) => props.theme.background};
+    color: ${(props) => props.theme.text};
     font-family: Poppins;
   }
 `;
